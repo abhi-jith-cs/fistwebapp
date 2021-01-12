@@ -1,0 +1,45 @@
+:root {
+  --first: #295939;
+  --second: #e9b0df;
+  --third: #adeecf;
+  --forth: #e8efeb;
+}
+header {
+  padding: 1em;
+}
+body {
+  background-color: var(--third);
+  color: var(--first);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 8em;
+}
+.main {
+  margin: 3em 8em;
+  background-color: var(--forth);
+  border-radius: 5%;
+  padding: 1em 0;
+}
+.center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+button {
+  border-radius: 10% !important;
+  background-color: var(--first) !important;
+  color: var(--forth) !important;
+}
+
+@media (max-width: 680px) {
+  .main {
+    margin: 3em 5em;
+  }
+  .input-container {
+    padding: 1em 3em;
+  }
+}
